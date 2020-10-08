@@ -191,12 +191,12 @@ namespace Labb_1_ITHS
             Console.ResetColor();
         }
 
-        public static int FindNextMatchingIndex(string str, int startLocation)
+        public static int FindNextMatchingIndex(string strs, int startLocation)
         {
             int matchingIndex = -1;
-            for (int i = startLocation + 1; i < str.Length; i++)
+            for (int i = startLocation + 1; i < strs.Length; i++)
             {
-                if (str[i] == str[startLocation])
+                if (strs[i] == strs[startLocation])
                 {
                     matchingIndex = i;
                     break;
